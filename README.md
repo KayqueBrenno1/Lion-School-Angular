@@ -2,6 +2,59 @@
 
 Este projeto foi gerado utilizando o [Angular CLI](https://angular.dev/) na versão **19.2.27**.
 
+## Instalação
+
+Antes de executar o projeto, é necessário ter o **Node.js** instalado na máquina.
+
+### 1. Instale o Node.js
+
+Baixe e instale o Node.js através do site oficial:
+
+https://nodejs.org/
+
+Após a instalação, verifique se o Node.js e o npm foram instalados corretamente:
+
+```bash
+node -v
+npm -v
+```
+
+### 2. Instale o Angular CLI
+
+Com o Node.js instalado, abra o terminal e execute:
+
+```bash
+npm install -g @angular/cli
+```
+
+Depois, verifique a versão instalada:
+
+```bash
+ng version
+```
+
+Para este projeto, é utilizada a versão **19.2.27** do Angular CLI.
+
+### 3. Instale as dependências do projeto
+
+Clone o repositório e entre na pasta do projeto:
+
+```bash
+git clone https://github.com/KayqueBrenno1/Lion-School-Angular.git
+```
+
+```bash
+cd Lion-School-Angular
+```
+
+Em seguida, instale todas as dependências necessárias:
+
+```bash
+npm install
+```
+
+Após a instalação, o projeto estará pronto para ser executado.
+
 ## Servidor de desenvolvimento
 
 Para iniciar o servidor de desenvolvimento local, execute:
@@ -32,47 +85,12 @@ Para consultar a lista completa de recursos disponíveis, como `components`, `di
 ng generate --help
 ```
 
-## Compilação
-
-Para compilar o projeto, execute:
-
-```bash
-ng build
-```
-
-Esse comando irá compilar o projeto e armazenar os arquivos gerados no diretório `dist/`.
-
-Por padrão, a compilação para produção otimiza a aplicação para melhorar seu desempenho e velocidade.
-
-## Execução dos testes unitários
-
-Para executar os testes unitários utilizando o [Karma](https://karma-runner.github.io), execute:
-
-```bash
-ng test
-```
-
-## Testes end-to-end
-
-Para executar testes de ponta a ponta (E2E), utilize:
-
-```bash
-ng e2e
-```
-
-O Angular CLI não inclui um framework de testes end-to-end por padrão. Você pode escolher e configurar uma ferramenta de sua preferência para realizar esse tipo de teste.
-
-## Recursos adicionais
-
-Para obter mais informações sobre o Angular CLI, incluindo referências detalhadas dos comandos disponíveis, consulte a [documentação oficial do Angular CLI](https://angular.dev/tools/cli).
-
-
 ## Integrantes
 
-| Nome | GitHub |
-| :-: | :-: |
-| Cosme Ribeiro | [Cosme-CR](https://github.com/Cosme-CR) |
-| Gustavo Vidal | [gustavidal](https://github.com/gustavidal) |
-| Kauan Alves | [KauanAlv](https://github.com/KauanAlv) |
-| Kayque Almeida | [KayqueBrenno1](https://github.com/KayqueBrenno1) |
-| Pyetro Ferreira | [PyetroSouza](https://github.com/PyetroSouza)|
+|       Nome      |                       GitHub                      |
+| :-------------: | :-----------------------------------------------: |
+|  Cosme Ribeiro  |      [Cosme-CR](https://github.com/Cosme-CR)      |
+|  Gustavo Vidal  |    [gustavidal](https://github.com/gustavidal)    |
+|   Kauan Alves   |      [KauanAlv](https://github.com/KauanAlv)      |
+|  Kayque Almeida | [KayqueBrenno1](https://github.com/KayqueBrenno1) |
+| Pyetro Ferreira |   [PyetroSouza](https://github.com/PyetroSouza)   |
