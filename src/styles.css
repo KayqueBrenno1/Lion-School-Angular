@@ -1,1 +1,125 @@
-/* You can add global styles to this file, and also import other style files */
+/* RESET */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    -webkit-tap-highlight-color: transparent;
+}
+
+ul, li, ol {
+    list-style: none;
+}
+
+app-root {
+    display: contents;
+}
+
+/* CONFIGURAÇÕES PADRÃO */
+:root {
+    --main-color: #3347b0;
+    --golden: #e5b657;
+    --red: #c11010;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+header .top {
+    display: flex;
+    height: 100px;
+    width: 100%;
+    background-color: var(--main-color);
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 105px;
+}
+
+header .top .out {
+    display: flex;
+    gap: 10px;
+    font-size: 36px;
+    color: #fff;
+    align-items: center;
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: background-color .2s ease;
+}
+
+header .top .out:hover {
+    background-color: rgba(255, 255, 255, .08);
+}
+
+main {
+    flex-grow: 1;
+}
+
+footer {
+    color: #fff;
+    display: flex;
+    height: 140px;
+    width: 100%;
+    background-color: var(--main-color);
+    align-items: center;
+    justify-content: center;
+}
+
+.frame {
+    display: flex;
+    width: 87%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.frame .info {
+    display: flex;
+    gap: 35px;
+}
+
+.frame .info .icons {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.frame .info .data {
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.frame .copyright {
+    font-size: 20px;
+}
+
+.frame .social-media {
+    display: flex;
+    gap: 15px;
+}
+
+.frame .social-media .border {
+    height: 55px;
+    width: 55px;
+    border-radius: 100%;
+    border: 2px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

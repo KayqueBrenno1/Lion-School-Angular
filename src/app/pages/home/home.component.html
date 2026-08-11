@@ -1,0 +1,15 @@
+<div class="hero">
+    <div class="hero-left">
+        <p>Escolha um <span>curso</span> para gerenciar</p>
+        <img class="devices" src="/img/devices.png" alt="Dispositivos (celular, tablet, computador)">
+    </div>
+    <div class="hero-center">
+        <img src="/img/student.png" alt="Estudante feminina" class="student">
+    </div>
+    <div class="hero-right">
+        <button *ngFor="let curso of cursos" [routerLink]="['/curso', curso.id]">
+            <img [src]="curso.icon" [alt]="'Ícone do curso de ' + curso.nome" class="icon">
+            {{ curso.sigla }}
+        </button>
+    </div>
+</div>

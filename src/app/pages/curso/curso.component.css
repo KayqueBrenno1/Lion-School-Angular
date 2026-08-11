@@ -1,0 +1,122 @@
+/* TELA CURSO */
+.hero-curso .filter {
+    display: flex;
+    width: 100vw;
+    height: 50px;
+    justify-content: space-between;
+    background-color: #BCC2E5;
+    align-items: center;
+    color: var(--main-color);
+    font-weight: 500;
+    padding: 0 100px;
+}
+
+.hero-curso .filter select {
+    background-color: transparent;
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    cursor: pointer;
+    outline: none;
+}
+
+.hero-curso .filter .subtitle {
+    display: flex;
+    gap: 20px;
+}
+
+.hero-curso .filter .subtitle .status {
+    display: flex;
+    gap: 10px;
+}
+
+.hero-curso .filter .subtitle .status .bloco {
+    height: 20px;
+    width: 20px;
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.3);
+}
+
+.hero-curso .filter .subtitle .status .bloco.azul {
+    background-color: var(--main-color);
+}
+
+.hero-curso .filter .subtitle .status .bloco.amarelo {
+    background-color: var(--golden);
+}
+
+.hero-curso {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    width: 100%;
+}
+
+.hero-curso h1 {
+    font-size: 64px;
+    color: var(--main-color);
+    text-align: center;
+}
+
+.hero-curso .container {
+    display: grid;
+    grid-template-columns: repeat(5, 200px);
+    justify-content: center;
+    gap: 65px;
+    width: 100%;
+    padding: 0 0 70px 0;
+}
+
+.hero-curso .container .card {
+    width: 200px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 45px;
+    padding: 10px 0;
+    box-shadow: 10px 10px 12px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.hero-curso .container .card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 15px 18px 20px rgba(0, 0, 0, 0.45);
+}
+
+.hero-curso .container .card:hover img {
+    transform: scale(1.1);
+}
+
+.hero-curso .container .card img {
+    transition: transform 0.3s ease;
+}
+
+.hero-curso .container .card.cursando {
+    background-color: var(--main-color);
+}
+
+.hero-curso .container .card.finalizado {
+    background-color: var(--golden);
+}
+
+.hero-curso .container .card img {
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.hero-curso .container .card span {
+    width: 85%;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 7px 7px 5px rgba(0, 0, 0, 0.4);
+}

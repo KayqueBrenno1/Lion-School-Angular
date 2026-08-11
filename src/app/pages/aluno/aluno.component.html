@@ -1,0 +1,20 @@
+<div class="hero-aluno" *ngIf="aluno">
+    <div class="quadrado student">
+        <img [src]="aluno.foto" [alt]="aluno.nome">
+        <span>{{ aluno.nome }} </span>
+    </div>
+
+    <div class="quadrado graphics">
+        <div class="data">
+            <div class="columns" *ngFor="let disciplina of aluno.desempenho">
+                <span class="nota" [ngClass]="definirCor(disciplina.valor)">{{ disciplina.valor }}</span>
+                
+                <div class="column">
+                    <div class="value" [ngClass]="definirCor(disciplina.valor)" [style.height.%]="disciplina.valor"></div>
+                </div>
+
+                <span class="sigla">{{ disciplina.categoria }}</span>
+            </div>
+        </div>
+    </div>
+</div>

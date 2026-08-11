@@ -1,0 +1,24 @@
+<div class="hero-curso" *ngIf="curso">
+    <div class="filter">
+        <select [(ngModel)]="statusSelecionado" name="status" id="status">
+            <option value="todos">Status</option>
+            <option value="cursando">Cursando</option>
+            <option value="finalizado">Finalizado</option>
+        </select>
+
+        <div class="subtitle">
+            <span>LEGENDA</span>
+            <div class="status"><div class="bloco azul"></div><span>Cursando</span></div>
+            <div class="status"><div class="bloco amarelo"></div><span>Finalizado</span></div>
+        </div>
+    </div>
+
+    <h1>{{ curso.nome }}</h1>
+
+    <div class="container">
+        <div class="card" *ngFor="let aluno of alunosFiltrados" [ngClass]="aluno.status" [routerLink]="['/aluno', aluno.id]">
+            <img [src]="aluno.foto" [alt]="aluno.nome">
+            <span>{{ aluno.nome }}</span>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,115 @@
+/* TELA ALUNO */
+.hero-aluno {
+    display: flex;
+    justify-content: space-between;
+    width: 87vw;
+}
+
+.hero-aluno .quadrado {
+    height: 500px;
+    width: 500px;
+    box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.2);
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-aluno .quadrado.student {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+}
+
+.hero-aluno .quadrado.student img {
+    height: 375px;
+    width: 375px;
+    border-radius: 50%;
+}
+
+.hero-aluno .quadrado.student span {
+    color: var(--main-color);
+    font-size: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 7px 7px 8px rgba(0, 0, 0, 0.4);
+}
+
+.hero-aluno .quadrado.graphics {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-aluno .quadrado.graphics .data {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+}
+
+.hero-aluno .quadrado.graphics .data .columns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+}
+
+.hero-aluno .quadrado.graphics .data .columns .nota {
+    font-size: 20px;
+    font-weight: 700;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, .25);
+}
+
+.hero-aluno .quadrado.graphics .data .columns .nota.aprovado {
+    color: var(--main-color);
+    text-shadow: 0 0 20px rgba(52, 73, 180, .45);
+}
+
+.hero-aluno .quadrado.graphics .data .columns .nota.recuperacao {
+    color: var(--golden);
+    text-shadow: 0 0 20px rgba(255, 193, 7, .45);
+}
+
+.hero-aluno .quadrado.graphics .data .columns .nota.reprovado {
+    color: var(--red);
+    text-shadow: 0 0 20px rgba(220, 53, 69, .45);
+}
+
+.hero-aluno .quadrado.graphics .data .columns .sigla {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+
+.hero-aluno .quadrado.graphics .data .columns .column {
+    width: 20px;
+    height: 300px;
+    background-color: #ECECF8;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    overflow: hidden;
+}
+
+.hero-aluno .quadrado.graphics .data .columns .column .value {
+    width: 100%;
+    height: 90%;
+    border-radius: 6px 6px 0 0;
+}
+
+.hero-aluno .quadrado.graphics .data .columns .column .value.aprovado {
+    background-color: var(--main-color);
+    box-shadow: 0 0 20px 5px var(--main-color);
+}
+
+.hero-aluno .quadrado.graphics .data .columns .column .value.recuperacao {
+    background-color: var(--golden);
+    box-shadow: 0 0 20px 5px var(--golden);
+}
+
+.hero-aluno .quadrado.graphics .data .columns .column .value.reprovado {
+    background-color: var(--red);
+    box-shadow: 0 0 20px 5px var(--red);
+}

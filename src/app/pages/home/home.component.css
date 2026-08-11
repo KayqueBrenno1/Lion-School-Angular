@@ -1,0 +1,63 @@
+/* TELA HOME */
+.hero {
+    display: flex;
+    width: 87vw;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero .hero-left {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.hero .hero-left p {
+    font-size: 60px;
+    font-weight: 300;
+    width: 500px;
+}
+
+.hero .hero-left p span {
+    color: var(--main-color);
+    font-weight: 700;
+}
+
+.hero .hero-right {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.hero .hero-right button {
+    background-color: var(--main-color);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    height: 200px;
+    width: 400px;
+    border: none;
+    font-size: 54px;
+    box-shadow: 12px 12px 6px rgba(51, 71, 176, 0.5);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.hero .hero-right button:hover {
+    background-color: #425fd4;
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: 16px 16px 12px rgba(51, 71, 176, 0.6);
+}
+
+.hero .hero-right button:active {
+    transform: translateY(0) scale(0.98);
+    box-shadow: 6px 6px 4px rgba(51, 71, 176, 0.5);
+}
+
+.hero .hero-right button .icon {
+    width: 40%;
+    height: auto;
+    object-fit: contain;
+}

@@ -1,0 +1,17 @@
+.main-curso {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.main-home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-aluno {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
