@@ -65,3 +65,14 @@ O Angular CLI não inclui um framework de testes end-to-end por padrão. Você p
 ## Recursos adicionais
 
 Para obter mais informações sobre o Angular CLI, incluindo referências detalhadas dos comandos disponíveis, consulte a [documentação oficial do Angular CLI](https://angular.dev/tools/cli).
+
+
+## Integrantes
+
+| Nome | GitHub |
+| :-: | :-: |
+| Cosme Ribeiro | [Cosme-CR](https://github.com/Cosme-CR) |
+| Gustavo Vidal | [gustavidal](https://github.com/gustavidal) |
+| Kauan Alves | [KauanAlv](https://github.com/KauanAlv) |
+| Kayque Almeida | [KayqueBrenno1](https://github.com/KayqueBrenno1) |
+| Pyetro Ferreira | [PyetroSouza](https://github.com/PyetroSouza)|
